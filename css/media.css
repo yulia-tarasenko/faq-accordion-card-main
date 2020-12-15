@@ -1,0 +1,49 @@
+@media (max-width: 1000px) {
+    .card {
+        background: 50% 0 no-repeat url('../images/bg-pattern-mobile.svg'),
+        #ffffff;
+    }
+    .card::before {
+        display: none;
+    }
+    .card__inner {
+        display: block;
+        padding: 135px 25px 50px;
+        position: relative;
+        overflow: visible;
+        min-height: 550px;
+    }
+    .card__img {
+        margin: 0;
+        position: absolute;
+        bottom: 83%;
+        right: 50%;
+        transform: translateX(44%);
+        animation-name: animation-image-mobile;
+        animation-duration: .5s;
+    }
+    .card__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .card__question-title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 330px) {
+    .card__inner  {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@keyframes animation-image-mobile {
+    0% {
+        bottom: 150%;
+    }
+    100% {
+    }
+}
